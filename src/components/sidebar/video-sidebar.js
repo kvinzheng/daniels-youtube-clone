@@ -5,10 +5,11 @@ import './sidebar.css'
 
 const SideBar = props => {
   if (props.videoList.length === 0) {
-    return <p>Please Search for some videos!</p>
+    return <div />
   }
   return (
     <div className="sidebar">
+      <h5><b>Current Search Term:</b> {props.search}</h5>
       <Card.Group>
         {RenderYouTubeCards(props)}
       </Card.Group>

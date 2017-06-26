@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Home from './components/home/home'
-import './App.css';
+import Home from './components/home/home';
+import './App.css';;
 
 class App extends Component {
   render() {
@@ -10,6 +10,6 @@ class App extends Component {
       </div>
     );
   }
-}
+};
 
 export default App;

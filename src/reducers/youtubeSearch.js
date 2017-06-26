@@ -7,7 +7,7 @@ export const search = (state = '', action) => {
     default:
       return state
   }
-}
+};
 
 export const searchResults = (state = [], action) => {
   switch (action.type) {
@@ -17,7 +17,7 @@ export const searchResults = (state = [], action) => {
       return state
 
   }
-}
+};
 
 export const selectedVideo = (state = {}, action) => {
   switch (action.type) {
@@ -26,4 +26,4 @@ export const selectedVideo = (state = {}, action) => {
     default:
       return state
   }
-}
+};

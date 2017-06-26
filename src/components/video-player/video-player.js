@@ -1,12 +1,12 @@
-import React from 'react'
-import './video-player.css'
+import React from 'react';
+import './video-player.css';
 
 const VideoPlayer = props => {
   if (props.videoList.length === 0) {
-    return <div/>
+    return <div/>;
   }
   if (!props.selectedVideo.hasOwnProperty('snippet')) {
-    return <p>Please select a video to watch</p>
+    return <p>Please select a video to watch</p>;
   }
   return (
     <div className="videoPlayer">
@@ -19,7 +19,7 @@ const VideoPlayer = props => {
         <p>{props.selectedVideo.snippet.description}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default VideoPlayer
+export default VideoPlayer;

@@ -1,8 +1,8 @@
-import { connect } from 'react-redux';
-import Welcome from './welcome'
+import {connect} from 'react-redux';
+import Welcome from './welcome';
 
 const mapStateToProps = state => ({
   videoList: state.searchResults
-})
+});
 
-export default connect(mapStateToProps)(Welcome)
+export default connect(mapStateToProps)(Welcome);

@@ -18,7 +18,7 @@ const ytSearch = term => {
   };
 
   return axios(url, { params: params }).then(response => response.data)
-}
+};
 
 
 export const youtubeSearch = (term) => ({

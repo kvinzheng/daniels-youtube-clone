@@ -1,7 +1,7 @@
-import React from 'react'
-import { Card } from 'semantic-ui-react'
-import RenderYouTubeCards from './video-cards'
-import './sidebar.css'
+import React from 'react';
+import { Card } from 'semantic-ui-react';
+import RenderYouTubeCards from './video-cards';
+import './sidebar.css';
 
 const SideBar = props => {
   if (props.videoList.length === 0) {
@@ -14,7 +14,7 @@ const SideBar = props => {
         {RenderYouTubeCards(props)}
       </Card.Group>
     </div>
-  )
-}
+  );
+};
 
-export default SideBar
+export default SideBar;

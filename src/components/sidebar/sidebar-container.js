@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import SideBar from './video-sidebar'
-import { selectedToShow } from '../../actions/index'
+import SideBar from './video-sidebar';
+import { selectedToShow } from '../../actions/index';
 
 const mapStateToProps = state => ({
   videoList: state.searchResults,
   search: state.search
-})
+});
 
-const mapDispatchToProps = dispatch => bindActionCreators({ selectedToShow }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ selectedToShow }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(SideBar)
+export default connect(mapStateToProps, mapDispatchToProps)(SideBar);

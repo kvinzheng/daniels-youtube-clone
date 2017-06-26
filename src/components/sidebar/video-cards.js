@@ -1,6 +1,6 @@
-import React from 'react'
-import { Card, Image } from 'semantic-ui-react'
-import './sidebar.css'
+import React from 'react';
+import { Card, Image } from 'semantic-ui-react';
+import './sidebar.css';
 
 const RenderYouTubeCards = props => (
   props.videoList.items.map(video => (
@@ -19,6 +19,6 @@ const RenderYouTubeCards = props => (
       </Card.Description>
     </Card>
   ))
-)
+);
 
-export default RenderYouTubeCards
+export default RenderYouTubeCards;

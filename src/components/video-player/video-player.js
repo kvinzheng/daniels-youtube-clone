@@ -1,4 +1,5 @@
 import React from 'react'
+import './video-player.css'
 
 const VideoPlayer = props => {
   if (props.videoList.length === 0) {
@@ -8,9 +9,14 @@ const VideoPlayer = props => {
     return <p>Please select a video to watch</p>
   }
   return (
-    <div>
+    <div className="videoPlayer">
       <div>
-        <iframe src={`https://www.youtube.com/embed/${props.selectedVideo.id.videoId}`} />
+        <iframe className="player" src={`https://www.youtube.com/embed/${props.selectedVideo.id.videoId}`} />
+      </div>
+      <div>
+        <h3>{props.selectedVideo.snippet.title}</h3>
+        <h5>{`Channel: ${props.selectedVideo.snippet.title}`}</h5>
+        <p>{props.selectedVideo.snippet.description}</p>
       </div>
     </div>
   )

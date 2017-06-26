@@ -1,8 +1,18 @@
 .videoPlayer {
+  margin: auto;
   margin-top: 20px;
+  width: 720px;
 }
 
 .player {
   height: 540px;
   width: 720px;
+}
+
+.videoDescription {
+  text-align: left;
+}
+
+.videoTitle {
+  text-align: center;
 }

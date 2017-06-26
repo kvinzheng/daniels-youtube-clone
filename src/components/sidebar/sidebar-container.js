@@ -4,7 +4,8 @@ import SideBar from './video-sidebar'
 import { selectedToShow } from '../../actions/index'
 
 const mapStateToProps = state => ({
-  videoList: state.searchResults
+  videoList: state.searchResults,
+  search: state.search
 })
 
 const mapDispatchToProps = dispatch => bindActionCreators({ selectedToShow }, dispatch)

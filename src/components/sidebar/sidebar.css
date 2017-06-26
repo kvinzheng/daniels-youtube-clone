@@ -4,6 +4,22 @@
 
 .sidebar {
   margin-top: 40px;
-  margin-left: 5%;
+  margin-left: 10%;
   width: 90%;
+  text-align: left;
+}
+
+.titleCard {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+
+.cardDescription {
+  margin-top: 5px;
+}
+
+.navSearch {
+  border-radius: 0% !important;
 }

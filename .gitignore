@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-
+/src/actions/apiKey.js
 
 # testing
 /coverage

@@ -3,7 +3,7 @@ import * as CONST from '../constants/constants';
 export const search = (state = '', action) => {
   switch (action.type) {
     case CONST.SEARCH:
-      return Object.assign({}, state, action.search)
+      return action.search
     default:
       return state
   }

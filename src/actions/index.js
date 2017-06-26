@@ -13,7 +13,8 @@ const ytSearch = term => {
     part: 'snippet',
     key: API_KEY,
     q: term,
-    type: 'video'
+    type: 'video',
+    maxResults: 25
   };
 
   return axios(url, { params: params }).then(response => response.data)
@@ -21,6 +22,11 @@ const ytSearch = term => {
 
 
 export const youtubeSearch = (term) => ({
-  type: CONST.SEARCH_RESULTS
+  type: CONST.SEARCH_RESULTS,
   payload: ytSearch(term)
+})
+
+export const selectedToShow = video => ({
+  type: CONST.SELECTED_VIDEO,
+  video
 })

@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import Welcome from './welcome';
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   videoList: state.searchResults
 });
 

@@ -3,11 +3,11 @@ import { bindActionCreators } from 'redux';
 import SearchBar from './search-bar';
 import { setSearchTerm, youtubeSearch } from '../../actions/index';
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   searchTerm: state.search
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({
+export const mapDispatchToProps = dispatch => bindActionCreators({
   setSearchTerm,
   youtubeSearch }, dispatch);
 

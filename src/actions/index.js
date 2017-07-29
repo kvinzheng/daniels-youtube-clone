@@ -7,7 +7,7 @@ export const setSearchTerm = (search) => ({
   search
 })
 
-const ytSearch = term => {
+export const ytSearch = term => {
   let url = 'https://www.googleapis.com/youtube/v3/search'
   let params = {
     part: 'snippet',

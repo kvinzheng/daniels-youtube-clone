@@ -126,23 +126,9 @@ describe('Reducers', () => {
     expect(result).toEqual(expected)
   })
   it('searchResults reducer', () => {
-    const initialState = []
-    const action = {
-      type: CONST.SEARCH_RESULTS_FULFILLED,
-      payload
-    }
-    const expected = payload
-    const result = searchResults(initialState, action)
-    expect(result).toEqual(expected)
+    // WRITE TESDT HERE
   })
   it('selectedVideo', () => {
-    const initialState = {}
-    const action = {
-      type: CONST.SELECTED_VIDEO,
-      video
-    }
-    const result = selectedVideo(initialState, action)
-    const expected = video
-    expect(result).toEqual(expected)
+    // WRITE TEST HERE
   })
 })

@@ -18,3 +18,7 @@ export default API_KEY
 8. `cd ../../` to go back to the root directory.
 9. `npm start` to launch the app on `localhost:3000`.
 10. Enjoy some youtube videos!!
+
+###  testing-breakout branch
+
+This branch is used for my React Testing with Jest Breakout sessions at Galvanize

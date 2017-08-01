@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import SideBar from './video-sidebar';
 import { selectedToShow } from '../../actions/index';
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   videoList: state.searchResults,
   search: state.search
 });
